@@ -23,18 +23,28 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5vr-8W-Hte">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5vr-8W-Hte">
                                 <rect key="frame" x="249" y="339" width="103" height="30"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="onTouchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="ble-xb-mQ8"/>
+                                    <action selector="onTouchUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jh1-Ax-3MI"/>
+                                    <action selector="onTouchUp:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="nOI-Fb-rPJ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.99607843139999996" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="5vr-8W-Hte" firstAttribute="top" secondItem="FyQ-qb-FwV" secondAttribute="bottom" constant="29" id="2xr-NF-Dsu"/>
                             <constraint firstItem="FyQ-qb-FwV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="GnT-PG-zjm"/>
                             <constraint firstItem="5vr-8W-Hte" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PJE-n4-bU6"/>
                             <constraint firstItem="FyQ-qb-FwV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kHg-ey-YSC"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="testButton" destination="5vr-8W-Hte" id="yuQ-9C-blA"/>
+                        <outlet property="testLabel" destination="FyQ-qb-FwV" id="5xt-1Y-mcm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
