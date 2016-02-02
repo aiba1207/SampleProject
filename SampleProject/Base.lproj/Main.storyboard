@@ -25,7 +25,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5vr-8W-Hte">
                                 <rect key="frame" x="249" y="339" width="103" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Hello"/>
                                 <connections>
                                     <action selector="onTouchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="ble-xb-mQ8"/>
                                     <action selector="onTouchUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jh1-Ax-3MI"/>
