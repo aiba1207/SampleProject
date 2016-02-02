@@ -23,7 +23,7 @@ class ViewController: UIViewController {
 	}
 
 	@IBAction func onTouchDown(sender: AnyObject) {
-		testLabel.text = "End of World!"
+		testLabel.text = "End of World!2"
 	}
 	@IBAction func onTouchUp(sender: AnyObject) {
 		testLabel.text = "Hello World!"
