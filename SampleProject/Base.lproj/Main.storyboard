@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -19,12 +19,14 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Hello World!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FyQ-qb-FwV">
                                 <rect key="frame" x="207" y="289" width="187" height="21"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5vr-8W-Hte">
                                 <rect key="frame" x="249" y="339" width="103" height="30"/>
+                                <animations/>
                                 <state key="normal" title="Hello"/>
                                 <connections>
                                     <action selector="onTouchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="ble-xb-mQ8"/>
@@ -32,11 +34,19 @@
                                     <action selector="onTouchUp:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="nOI-Fb-rPJ"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ghI-9k-3wH">
+                                <rect key="frame" x="250" y="377" width="100" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" red="0.99607843139999996" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="5vr-8W-Hte" firstAttribute="top" secondItem="FyQ-qb-FwV" secondAttribute="bottom" constant="29" id="2xr-NF-Dsu"/>
                             <constraint firstItem="FyQ-qb-FwV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="GnT-PG-zjm"/>
+                            <constraint firstItem="ghI-9k-3wH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Lo8-ie-C25"/>
                             <constraint firstItem="5vr-8W-Hte" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PJE-n4-bU6"/>
                             <constraint firstItem="FyQ-qb-FwV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kHg-ey-YSC"/>
                         </constraints>
@@ -44,6 +54,7 @@
                     <connections>
                         <outlet property="testButton" destination="5vr-8W-Hte" id="yuQ-9C-blA"/>
                         <outlet property="testLabel" destination="FyQ-qb-FwV" id="5xt-1Y-mcm"/>
+                        <outlet property="testTextBx" destination="ghI-9k-3wH" id="pcG-Qp-IPP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
